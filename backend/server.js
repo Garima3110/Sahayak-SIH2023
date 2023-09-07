@@ -16,7 +16,7 @@ app.get("/", (req,res)=>{
 })
 
 app.get("/login", (req,res)=>{
-    res.send("loginpage");
+    res.send("loginpage")
 })
 
 app.get("/signup", (req,res)=>{
