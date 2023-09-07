@@ -4,13 +4,13 @@ const dotenv = require("dotenv")
 dotenv.config();
 const PORT = process.env.PORT || 7000;
 const cors = require('cors');
-
+const connectDB = require("./config/db")
 app.use(cors());
 app.use(express.json());
 
 
 
-
+connectDB();
 app.get("/", (req,res)=>{
     res.send("main landing page");
 })
