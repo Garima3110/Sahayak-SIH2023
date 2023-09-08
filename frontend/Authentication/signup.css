@@ -1,0 +1,77 @@
+body{
+    background-color: #BEB9FF ;
+}
+
+.login-heading, .signup-heading{
+    font-weight: bolder;
+    font-size: 70px;
+    color: black;
+    text-align: left;
+    text-decoration: underline;
+    margin-left:5%;
+
+}
+
+.form{
+    text-align: left;
+    font-size: xx-large;
+    font-weight: bold;
+
+    border: 2px solid black;
+    padding: 100px;
+    background-color: black;
+    border-radius: 30px;
+    
+    margin-left: 4%;
+    margin-right: 4%;
+
+}
+
+input{
+    display: inline;
+    font-size: xx-large;
+}
+label{
+    font-size: xx-large;
+    color:#FFFFFF;
+}
+button{
+    display: inline;
+    position: relative;
+    font-size: xx-large;
+    border-radius: 15px;
+    margin-left:7%;
+}
+
+button:hover{
+    color: white;
+    background-color: #BEB9FF;
+    font-weight: bolder;
+    transform: scale(1.1);
+}
+
+#vl{
+    border-left: 2px solid white;
+    height: 400px;
+    margin-left: 50%;
+    position: absolute;
+}
+#vl2{
+    border-left: 2px solid white;
+    height: 560px;
+    margin-left: 50%;
+    position: absolute;
+}
+
+.class{
+    position: absolute;
+    margin-left: 60%;
+}
+#class{
+    color: #C0C0C0;
+    font-size:40px;
+}
+#tenth{
+    color: #FFFFFF;
+    font-size: 70px;
+}

@@ -4,8 +4,7 @@ const router = express.Router();
 const {protect} = require("../middleware/authMiddleware")
 
 
-
-router.route("/signup", registerUser);
+router.route("/").post(registerUser).get(protect)
 router.post("/login", authUser);
 
 module.exports = router;
