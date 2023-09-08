@@ -11,10 +11,21 @@ a {
     text-decoration: none;
 }
 
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
 strong.section_header {
     font-size: 4rem;
     text-transform: capitalize;
     font-family: 'Seymour One', sans-serif;
+}
+.section_header span {
+    font-style: italic;
+    margin-right: 2rem;
+    font-size: 3rem;
 }
 strong.heading2 {
     font-size: 1.5rem;
@@ -75,10 +86,6 @@ strong.heading2 {
     position: relative;
     overflow: hidden;
 }
-
-/* .hero_wrapper * {
-    outline: 1px solid red;
-} */
 .hero_wrapper .circle_wrapper {
     /* background: beige; */
     display: flex;
@@ -184,4 +191,61 @@ strong.heading2 {
 .content li {
     margin: 1rem 0;
     color: rgb(222, 222, 222);
+}
+
+
+/* quiz wrapper styling */
+.quiz_wrapper {
+    width: auto;
+    /* height: 100vh; */
+    padding: 50px 100px;
+    background-color: rgb(153, 146, 232);
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+.quiz_wrapper .quiz_intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.quiz_intro p {
+    text-decoration: underline;
+}
+
+.quiz_content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.quiz_content p {
+    text-align: center;
+    width: 80%;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.7rem;
+}
+.quiz_intructions li {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.start_now_button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.start_now_button button {
+    background-color: black;
+    padding: 0.5rem 5rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    border-radius: 2rem;
+    color: white;
 }
