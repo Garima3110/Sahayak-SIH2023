@@ -1,105 +1,51 @@
 body{
-    margin: 0;
-    padding: 50px 100px;
-    box-sizing: border-box;
-    background: #BEB9FF;
-    background: radial-gradient(circle, #7F7AB5 0%, #C1BDE8 100%);
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    font-family: 'Inter', sans-serif;
+    background-color: #BEB9FF ;
 }
 
-strong, p {
-    margin: 0;
+.login-heading, .signup-heading{
+    font-weight: bolder;
+    font-size: 70px;
+    color: black;
+    text-align: left;
+    text-decoration: underline;
+    margin-left:5%;
+
 }
 
-strong.section_header {
-    width: 100%;
-    text-align: center;
-    font-size: 4rem;
-    text-transform: capitalize;
-    font-family: 'Seymour One', sans-serif;
+.form{
+    text-align: left;
+    font-size: xx-large;
+    font-weight: bold;
+
+    border: 2px solid black;
+    padding: 100px;
+    background-color: black;
+    border-radius: 30px;
+    
+    margin-left: 4%;
+    margin-right: 4%;
+
 }
 
-
-/* form wrapper styling */
-.form_wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    color: rgb(255, 255, 255);
-    padding: 50px;
-    border-radius: 2rem;
-    box-shadow: 1px 2px 20px rgba(0,0,0,0.2);
-    gap: 50px;
-    background: rgb(0, 0, 0);
-}
-
-.form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 30px;
-}
-.form .field {
-    width: 100%;
-    display: flex;
-    gap: 1.5rem;
-}
-.field input {
-    background: transparent;
-    outline: none;
-    border: none;
-    color: rgb(255, 255, 255);
-    font-size: 1rem;
-    border-bottom: 1px solid rgb(73, 73, 73);
-}
-
-.class_wrapper {
-    border-left: 1px solid rgb(209, 209, 209);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.class_wrapper p {
-    font-size: 2rem;
-}
-.class_wrapper strong {
-    font-size: 5rem;
-    font-family: 'Seymour One', sans-serif;
-}
-
-
-.buttons_wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-.buttons_wrapper button {
-    mix-blend-mode: difference;
-    background: #BEB9FF;
+input{
     display: inline;
-    font-size: 1rem;
-    border-radius: 1rem;
-    outline: none;
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    transition: all 200ms ease-in-out;
-    font-weight: 700;
+    font-size: xx-large;
 }
-.buttons_wrapper button:hover {
-    background: white;
+label{
+    font-size: xx-large;
+    color:#FFFFFF;
 }
-.buttons_wrapper a {
+button{
+    display: inline;
+    position: relative;
+    font-size: xx-large;
+    border-radius: 15px;
+    margin-left:7%;
+}
+
+button:hover{
     color: white;
+    background-color: #BEB9FF;
+    font-weight: bolder;
+    transform: scale(1.1);
 }
