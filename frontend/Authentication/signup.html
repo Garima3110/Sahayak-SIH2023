@@ -14,32 +14,33 @@
     <strong class="section_header">Sign Up</strong>
 
     <div class="form_wrapper">
-        <form action="" class="form" method="post" >
+        <form action="/api/user/signup" class="form" method="post">
             <div class="field">
-                <label for="name">Name : </label>
-                <input type="text" id="name">
+                <label for="name">Name :</label>
+                <input type="text" id="name" name="name"> 
             </div>
-
+        
             <div class="field">
-                <label for="contact">Contact : </label>
-                <input type="number" id="contact">
+                <label for="contact">Contact :</label>
+                <input type="number" id="contact" name="number"> 
             </div>
-
+        
             <div class="field">
-                <label for="email">Email : </label>
-                <input type="email" id="email">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email"> 
             </div>
-
+        
             <div class="field">
-                <label for="password">Password : </label>
-                <input type="password" id="password">
+                <label for="password">Password :</label>
+                <input type="password" id="password" name="password"> 
             </div>
-
+        
             <div class="buttons_wrapper">
                 <button class="submit" type="submit">Submit</button>
                 <a href="./login.html">Already a member?</a>
             </div>
         </form>
+        
 
         <div class="class_wrapper">
             <p>class:</p>

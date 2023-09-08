@@ -1,7 +1,8 @@
+const express = require("express");
 const expressAsyncHandler = require("express-async-handler");
 const User = require("../models/userModel")
 const generateToken =  require("../config/generateToken")
-
+const router = express.Router();
 
 const registerUser = expressAsyncHandler(async (req,res)=>{
     const {name,email,password,number} = req.body;
@@ -44,8 +45,9 @@ const registerUser = expressAsyncHandler(async (req,res)=>{
 
 
 const authUser = expressAsyncHandler(async(req,res)=>{
-    const {email, password} = req.body;
-
+    const {email,password} = req.body;
+   console.log(email);
+   console.log(password);
     const user = await User.findOne({email});
 
     if(user && (await user.matchPassword(password)))
@@ -67,5 +69,6 @@ const authUser = expressAsyncHandler(async(req,res)=>{
 })
 
 
-
+router.route('/signup').post(registerUser);
+router.route('/login').post(authUser);
 module.exports= {registerUser, authUser}
