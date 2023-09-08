@@ -1,16 +1,21 @@
 body {
     margin: 0;
     padding: 0;
-    height: 300vh;
     box-sizing: border-box;
     background: radial-gradient(50% 50% at 50% 50%, #7F7AB5 0%, #C1BDE8 100%);
     position: relative;
+    font-family: 'Inter', sans-serif;
 }
 
 a {
     text-decoration: none;
 }
 
+strong.section_header {
+    font-size: 4rem;
+    text-transform: capitalize;
+    font-family: 'Seymour One', sans-serif;
+}
 strong.heading2 {
     font-size: 1.5rem;
     text-transform: capitalize;
@@ -24,7 +29,7 @@ strong.heading2 {
     /* border-radius: 3rem; */
     box-shadow: 1px 5px 50px rgba(0, 0, 0, 0.3);
     /* border: 1px solid #000; */
-    padding: 1rem 0rem;
+    padding: 0.5rem 0rem;
     background: rgba(195, 194, 216, 0.90);
     backdrop-filter: blur(8px);
     display: flex;
@@ -113,4 +118,70 @@ strong.heading2 {
     /* display: none; */
     mix-blend-mode: saturation;
     width: 100%;
+}
+
+/* categories styling */
+.categories_wrapper {
+    width: auto;
+    /* height: 100vh; */
+    padding: 50px 100px;
+    background-color: rgb(153, 146, 232);
+    
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.categories_wrapper .intro_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+}
+.intro_wrapper p {
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+    width: 60%;
+    font-size: 1.1rem;
+}
+
+.grid_wrapper {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    background: black;
+    border-radius: 1rem;
+    padding: 3rem 0px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+}
+.grid_wrapper .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 50px;
+    color: white;
+}
+.card:nth-child(2) {
+    border-left: 1px solid rgb(112, 112, 112);
+    border-right: 1px solid rgb(112, 112, 112);
+}
+.card .intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.intro img {
+    width: 2rem;
+    filter: invert(1);
+}
+
+.content li {
+    margin: 1rem 0;
+    color: rgb(222, 222, 222);
 }
