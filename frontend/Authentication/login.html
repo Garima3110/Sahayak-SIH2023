@@ -3,27 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login SIH 2023</title>
-    <link rel="stylesheet" href="login.css">
+    <title>Login In</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Seymour+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c0c1f0b98f.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <strong class="section_header">Login In</strong>
 
-    <div class="login-heading">Login</div>
-    <br>
-    <div id="vl"></div>
-    
-    <div class=form>
-        <div class="class" id="class">class:<br><div id="tenth">10 th</div></div>
-        <label>Email Id: </label><input type ="text" placeholder="Enter email id"><br><br>
-        <label>Password: </label><input type="password" placeholder="enter password"><br><br>
-        <button id="submit">Submit</button>
-        <button id="register">Register</button>
-        
+    <div class="form_wrapper">
+        <form action="" class="form">
+            <div class="field">
+                <label for="email">Email : </label>
+                <input type="email">
+            </div>
+
+            <div class="field">
+                <label for="password">Password : </label>
+                <input type="password">
+            </div>
+
+            <div class="buttons_wrapper">
+                <button class="submit" type="submit">Submit</button>
+                <a href="./login.html">Register for new User!</a>
+            </div>
+        </form>
+
+        <div class="class_wrapper">
+            <p>class:</p>
+            <strong>10 th</strong>
+        </div>
     </div>
-
-    
-    
-
 </body>
 </html>
-
