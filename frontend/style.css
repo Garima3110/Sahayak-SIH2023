@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: radial-gradient(50% 50% at 50% 50%, #7F7AB5 0%, #C1BDE8 100%);
+}
+
+
+/* navbar styling */
+.navbar {
+
+}
