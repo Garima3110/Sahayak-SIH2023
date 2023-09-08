@@ -1,101 +1,105 @@
-
-html{
-    background-color: black;
-    box-sizing: border-box;
-}
-body {
+body{
   margin: 0;
-  padding: 0;
-  height: 100vh;
+  padding: 50px 100px;
   box-sizing: border-box;
-  background: radial-gradient(50% 50% at 50% 50%, #7f7ab5 0%, #c1bde8 100%);
-  position: relative;
-  color: white;
+  background: #BEB9FF;
+  background: radial-gradient(circle, #7F7AB5 0%, #C1BDE8 100%);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  gap: 50px;
+  font-family: 'Inter', sans-serif;
 }
-.container {
-  display: flex;
-  margin-top: 10px;
-  justify-content: center;
-  border: 2px solid white;
-  border-radius: 30px;
-  align-items: center;
-  box-shadow: 0px 3px 10px 10px white;
-  width: 80vw;
-  background-color: black;
+
+strong, p {
+  margin: 0;
 }
-body > h1 {
-  font-size: 2.5rem;
-  font-family: "Seymour One", sans-serif;
+
+strong.section_header {
+  width: 100%;
+  text-align: center;
+  font-size: 4rem;
+  text-transform: capitalize;
+  font-family: 'Seymour One', sans-serif;
 }
-.section1 {
-  margin: 0px auto;
+
+
+/* form wrapper styling */
+.form_wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: rgb(255, 255, 255);
+  padding: 50px;
+  border-radius: 2rem;
+  box-shadow: 1px 2px 20px rgba(0,0,0,0.2);
+  gap: 50px;
+  background: rgb(0, 0, 0);
 }
-.section2 {
-  margin: 0px auto;
-}
-.loginForm {
+
+.form {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: center;
-  margin: 20px;
-  font-family: "SeoulNamsan CB", sans-serif;
+  gap: 30px;
 }
-.loginForm input {
-   margin: 5px 5px 10px 5px; 
-   color: #fffefe;
-  padding: 5px 5px; 
+.form .field {
+  width: 100%;
+  display: flex;
+  gap: 1.5rem;
+}
+.field input {
+  background: transparent;
+  outline: none;
   border: none;
-  border-bottom: 1px solid #fffefe; /* Add a bottom border for the blank */
-  outline: none; /* Remove focus outline */
-  background: none;
-   /* Set the width of the blank as needed */
-  font-family: inherit;
-  font-size: inherit;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  border-bottom: 1px solid rgb(73, 73, 73);
 }
 
-hr {
-  height: 40vh;
-  border: 0px;
-  background-color:white;
-  width: 1px;
-  box-shadow: 0px 0px 21px 3px #c1bde8;
+.class_wrapper {
+  border-left: 1px solid rgb(209, 209, 209);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.section2 h2 {
+.class_wrapper p {
   font-size: 2rem;
-  font-family: "Seymour One", sans-serif;
-  flex-wrap: wrap;
-  margin:0 auto;
 }
-.registerBtn{
-    margin: 5px 5px;
-    padding: 8px 10px;
-    border:none;
-    outline: none;
-    font-size: 1rem;
-    border: 2px solid black;
-    border-radius: 8px;
-
-}
-.registerBtn:hover{
-    cursor: pointer;
-    font-weight: bolder;
-    background-color: #c1bde8;
-}
-.fas , .fa-envelope{
-    margin: 10px;
+.class_wrapper strong {
+  font-size: 5rem;
+  font-family: 'Seymour One', sans-serif;
 }
 
-@media only screen and (max-width:650px){
-hr{
-    display: none;
 
+.buttons_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
 }
-.container{
-    flex-direction: column-reverse;
+.buttons_wrapper button {
+  mix-blend-mode: difference;
+  background: #BEB9FF;
+  display: inline;
+  font-size: 1rem;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+  font-weight: 700;
 }
+.buttons_wrapper button:hover {
+  background: white;
+}
+.buttons_wrapper a {
+  color: white;
 }
