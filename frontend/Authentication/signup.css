@@ -1,77 +1,108 @@
-body{
-    background-color: #BEB9FF ;
-}
 
-.login-heading, .signup-heading{
-    font-weight: bolder;
-    font-size: 70px;
-    color: black;
-    text-align: left;
-    text-decoration: underline;
-    margin-left:5%;
-
-}
-
-.form{
-    text-align: left;
-    font-size: xx-large;
-    font-weight: bold;
-
-    border: 2px solid black;
-    padding: 100px;
+html{
     background-color: black;
-    border-radius: 30px;
-    
-    margin-left: 4%;
-    margin-right: 4%;
-
+    box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  box-sizing: border-box;
+  background: radial-gradient(50% 50% at 50% 50%, #7f7ab5 0%, #c1bde8 100%);
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  border: 2px solid white;
+  border-radius: 30px;
+  align-items: center;
+  box-shadow: 0px 3px 10px 10px white;
+  width: 80vw;
+  background-color: black;
+}
+body > h1 {
+  font-size: 2.5rem;
+  font-family: "Seymour One", sans-serif;
+}
+.section1 {
+  margin: 0px auto;
+}
+.section2 {
+  margin: 0px auto;
+}
+.signUpForm {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+  font-family: "SeoulNamsan CB", sans-serif;
+}
+.signUpForm input {
+   margin: 5px 5px 10px 5px; 
+   color: #fffefe;
+  padding: 5px 5px; 
+  border: none;
+  border-bottom: 1px solid #fffefe; /* Add a bottom border for the blank */
+  outline: none; /* Remove focus outline */
+  background: none;
+   /* Set the width of the blank as needed */
+  font-family: inherit;
+  font-size: inherit;
 }
 
-input{
-    display: inline;
-    font-size: xx-large;
+hr {
+  height: 40vh;
+  border: 0px;
+  background-color:white;
+  width: 1px;
+  box-shadow: 0px 0px 21px 3px #c1bde8;
+  /* margin-top: 100px; */
+  /* margin-left: 30px; */
+  /* margin-right: 30px; */
 }
-label{
-    font-size: xx-large;
-    color:#FFFFFF;
+.member{
+    margin: 20px;
 }
-button{
-    display: inline;
-    position: relative;
-    font-size: xx-large;
-    border-radius: 15px;
-    margin-left:7%;
+.member a {
+  color: #c1bde8;
 }
+.section2 h2 {
+  font-size: 2rem;
+  font-family: "Seymour One", sans-serif;
+  flex-wrap: wrap;
+  margin:0 auto;
+}
+.registerBtn{
+    margin: 5px 5px;
+    padding: 8px 10px;
+    border:none;
+    outline: none;
+    font-size: 1rem;
+    border: 2px solid black;
+    border-radius: 8px;
 
-button:hover{
-    color: white;
-    background-color: #BEB9FF;
+
+}
+.registerBtn:hover{
+    cursor: pointer;
     font-weight: bolder;
-    transform: scale(1.1);
+    background-color: #c1bde8;
 }
 
-#vl{
-    border-left: 2px solid white;
-    height: 400px;
-    margin-left: 50%;
-    position: absolute;
-}
-#vl2{
-    border-left: 2px solid white;
-    height: 560px;
-    margin-left: 50%;
-    position: absolute;
-}
+@media only screen and (max-width:650px){
+hr{
+    display: none;
 
-.class{
-    position: absolute;
-    margin-left: 60%;
 }
-#class{
-    color: #C0C0C0;
-    font-size:40px;
+.container{
+    flex-direction: column-reverse;
 }
-#tenth{
-    color: #FFFFFF;
-    font-size: 70px;
 }

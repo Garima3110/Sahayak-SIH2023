@@ -3,27 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login SIH 2023</title>
-    <link rel="stylesheet" href="login.css">
+
+    <title>Login-Sahayak</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c0c1f0b98f.js"
+      crossorigin="anonymous"
+    ></script>
 </head>
 <body>
-
-    <div class="login-heading">Login</div>
-    <br>
-    <div id="vl"></div>
-    
-    <div class=form>
-        <div class="class" id="class">class:<br><div id="tenth">10 th</div></div>
-        <label>Email Id: </label><input type ="text" placeholder="Enter email id"><br><br>
-        <label>Password: </label><input type="password" placeholder="enter password"><br><br>
-        <button id="submit">Submit</button>
-        <button id="register">Register</button>
-        
+    <h1>Login</h1>
+    <div class="container">
+        <section class="section1">
+            <form action="registration_process.php" method="POST" class="loginForm">
+                <label for="email"><i class="fas fa-envelope"></i>Email:</label>
+                <input type="email" id="email" name="email" required />
+                <label for="password"><i class="fas fa-lock"></i>Password:</label>
+                <input type="password" id="password" name="password" required />
+                
+                <button type="submit" class="registerBtn">Submit</button>
+            </form>
+                    </section>
+        <hr>
+        <section class="section2"><h2>Class 10th</h2></section>
     </div>
-
     
-    
-
 </body>
 </html>
 
