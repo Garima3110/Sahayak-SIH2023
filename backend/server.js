@@ -4,24 +4,25 @@ const dotenv = require("dotenv")
 dotenv.config();
 const PORT = process.env.PORT || 7000;
 const cors = require('cors');
-
+const connectDB = require("./config/db")
 app.use(cors());
 app.use(express.json());
+const userRoutes = require("./routes/userRoutes")
 
 
-
-
+connectDB();
 app.get("/", (req,res)=>{
     res.send("main landing page");
 })
 
-app.get("/login", (req,res)=>{
-    res.send("loginpage");
-})
+// app.get("/login", (req,res)=>{
+//     res.send("loginpage")
+// })
 
-app.get("/signup", (req,res)=>{
-    res.send("signup");
-})
+// app.get("/signup", (req,res)=>{
+//     res.send("signup");
+// })
+app.use("/user", userRoutes);
 
 app.get("/quizpage", (req,res)=>{
     res.send("quizpage");
