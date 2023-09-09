@@ -28,14 +28,15 @@ const registerUser = expressAsyncHandler(async (req,res)=>{
         number,
     })
     if(user){
-        res.status(201).json({
-            _id: user._id,
-            name: user.name,
-            email: user.email,
-            number: user.number,
-            token: generateToken(user._id),
+        // res.status(201).json({
+        //     _id: user._id,
+        //     name: user.name,
+        //     email: user.email,
+        //     number: user.number,
+        //     token: generateToken(user._id),
 
-        })
+        // })
+        res.send("Registered successfully");
     }
     else{
         res.status(400);
@@ -46,20 +47,21 @@ const registerUser = expressAsyncHandler(async (req,res)=>{
 
 const authUser = expressAsyncHandler(async(req,res)=>{
     const {email,password} = req.body;
-   console.log(email);
-   console.log(password);
+//    console.log(email);
+//    console.log(password);
     const user = await User.findOne({email});
 
     if(user && (await user.matchPassword(password)))
     {
-        res.json({
-            _id: user._id,
-            name: user.name,
-            email: user.email,
-            number: user.number,
-            token: generateToken(user._id),
-        }
-    );
+        // res.json({
+        //     _id: user._id,
+        //     name: user.name,
+        //     email: user.email,
+        //     number: user.number,
+        //     token: generateToken(user._id),
+        // }
+        res.send("login successfull")
+    
     }
     else{
         res.status(401);
