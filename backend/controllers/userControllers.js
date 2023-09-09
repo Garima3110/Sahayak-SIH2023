@@ -36,7 +36,8 @@ const registerUser = expressAsyncHandler(async (req,res)=>{
         //     token: generateToken(user._id),
 
         // })
-        res.send("Registered successfully");
+        
+        res.redirect('/login')
     }
     else{
         res.status(400);
@@ -60,7 +61,7 @@ const authUser = expressAsyncHandler(async(req,res)=>{
         //     number: user.number,
         //     token: generateToken(user._id),
         // }
-        res.send("login successfull")
+        res.redirect('/quizpage')
     
     }
     else{
@@ -73,4 +74,5 @@ const authUser = expressAsyncHandler(async(req,res)=>{
 
 router.route('/signup').post(registerUser);
 router.route('/login').post(authUser);
+
 module.exports= {registerUser, authUser}
