@@ -2,13 +2,17 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: radial-gradient(50% 50% at 50% 50%, #7F7AB5 0%, #C1BDE8 100%);
+    /* background: radial-gradient(50% 50% at 50% 50%, #7F7AB5 0%, #C1BDE8 100%); */
     position: relative;
     font-family: 'Inter', sans-serif;
 }
 
 a {
     text-decoration: none;
+}
+
+strong, p {
+    margin: 0;
 }
 
 button {
@@ -62,17 +66,21 @@ strong.heading2 {
     justify-content: space-around;
     z-index: 10000;
 }
-.navbar .logo strong {
+.navbar .logo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+.navbar .logo p {
     color: rgb(255, 255, 255);
-    font-family: 'Seymour One', sans-serif;
+    font-family: 'inter', sans-serif;
     text-transform: uppercase;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 .logo-image{
-     height: 7vh;
-}
-.logo-image:hover{
-    cursor: pointer;
+    width: 3rem;
 }
 .navbar .links {
     display: flex;
@@ -85,6 +93,7 @@ strong.heading2 {
     color: rgb(255, 255, 255);
     font-weight: 700;
     font-family: 'Inter', sans-serif;
+    transition: all 200ms ease-in-out;
 }
 .links .login:hover{
     color:rgb(203, 198, 255);
@@ -104,59 +113,80 @@ strong.heading2 {
 .hero_wrapper {
     height: 100vh;
     /* width: 100vw; */
+    padding: 0 100px;
     display: grid;
     align-items: center;
     justify-content: center;
     grid-template-columns: repeat(2, 1fr);
     position: relative;
-    overflow: hidden;
+    background: #7F7AB5;
 }
 .hero_wrapper .circle_wrapper {
-    /* background: beige; */
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
     width: 100%;
     height: 100%;
-}
-.circle_wrapper .circle {
-    background: black;
-    width: 50%;
-    height: 50%;
-    border-radius: 50%;
-    display: flex;
-    gap: 0.5rem;
-    flex-direction: column;
+    display: grid;
     align-items: center;
     justify-content: center;
-    color: white;
 }
-.circle .hero_heading {
+.circle_wrapper strong {
+    text-align: end;
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    height: fit-content;
+}
+.circle_wrapper .hero_heading {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
     font-family: 'Seymour One', sans-serif;
     font-size: 7rem;
     line-height: 6rem;
-    text-align: end;
-    mix-blend-mode: difference;
+    color: rgb(0, 0, 0);
+    position: relative;
+}
+.hero_heading strong {
+    text-decoration: none;
+}
+.hero_heading img {
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
 }
 
-.hero_wrapper .hero_transition {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    overflow: hidden;
-}
-.hero_transition img {
-    /* display: none; */
-    mix-blend-mode: saturation;
+
+.hero_wrapper .hero_illustrations {
     width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero_wrapper .hero_illustrations img {
+    width: 100%;
+    border-radius: 20px;
+    border-bottom: 0.5rem solid black;
+}
+
+/* hero trnsition styling */
+.hero_transition {
+    display: none;
+    padding: 200px 0;
+    width: 100%;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #7F7AB5;
+    background: linear-gradient(0deg, rgb(203, 198, 255) 0%, #7F7AB5 100%);
 }
 
 /* categories styling */
 .categories_wrapper {
     width: auto;
     padding: 50px 100px;
-    background-color: rgb(203, 198, 255);
+    background: linear-gradient(0deg, rgb(203, 198, 255) 0%, #7F7AB5 100%);
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -257,8 +287,8 @@ strong.heading2 {
 .quiz_content_innerSection::before{
     content:" ";
     background-image: url('./images/quiz.png');
-    background-size: 30vw;
-    background-position: center;
+    background-size: contain;
+    background-position: center center;
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
