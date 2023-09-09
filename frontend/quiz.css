@@ -14,3 +14,23 @@ body{
     justify-content: center;
     align-items: center;
 }
+.start_now_button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.start_now_button button {
+    background-color: black;
+    padding: 0.5rem 5rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    border-radius: 2rem;
+    color: white;
+}
+.start_now_button button .quiz-link{
+ color: white;
+}
+.start_now_button button .quiz-link:hover{
+ color: rgb(209, 198, 229);
+}
