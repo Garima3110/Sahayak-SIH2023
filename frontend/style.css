@@ -68,6 +68,12 @@ strong.heading2 {
     text-transform: uppercase;
     font-size: 1.3rem;
 }
+.logo-image{
+     height: 7vh;
+}
+.logo-image:hover{
+    cursor: pointer;
+}
 .navbar .links {
     display: flex;
     align-items: center;
@@ -79,6 +85,12 @@ strong.heading2 {
     color: rgb(255, 255, 255);
     font-weight: 700;
     font-family: 'Inter', sans-serif;
+}
+.links .login:hover{
+    color:rgb(203, 198, 255);
+}
+.links .register:hover{
+    background-color:rgb(203, 198, 255);
 }
 .links .register {
     background: rgb(255, 255, 255);
@@ -92,7 +104,6 @@ strong.heading2 {
 .hero_wrapper {
     height: 100vh;
     /* width: 100vw; */
-
     display: grid;
     align-items: center;
     justify-content: center;
