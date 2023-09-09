@@ -312,3 +312,9 @@ strong.heading2 {
     border-radius: 2rem;
     color: white;
 }
+.start_now_button button .quiz-link{
+ color: white;
+}
+.start_now_button button .quiz-link:hover{
+ color: rgb(209, 198, 229);
+}
