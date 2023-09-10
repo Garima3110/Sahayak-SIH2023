@@ -45,7 +45,9 @@ app.get("/results", (req,res)=>{
 app.get("/quizpage", (req,res)=>{
     res.sendFile(path.join(__dirname, '../frontend/quiz.html'));
 })
-
+app.get("/mcqpage", (req,res)=>{
+    res.sendFile(path.join(__dirname, '../frontend/mcqpage.html'));
+})
 
 
 
