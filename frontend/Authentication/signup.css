@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
 body{
     margin: 0;
-    padding: 50px 100px;
     box-sizing: border-box;
     background: #BEB9FF;
     background: radial-gradient(circle, #7F7AB5 0%, #C1BDE8 100%);
@@ -10,6 +11,34 @@ body{
     font-family: 'Inter', sans-serif;
 }
 
+.homeBtn button{
+    background-color:transparent;
+    padding: 0.3rem 0.5rem;
+    border-radius: 1rem;
+    font-family: 'Space Mono', sans-serif;
+    border-style: none;
+    outline: none;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    transition: all 200ms ease-in-out;
+    border: 2px solid black;
+  }
+  .homeBtn button a{
+    font-weight: 1000;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: black;
+  }
+  .fas, .fa-home{
+    margin: 3px;
+  }
+  .homeBtn button:hover{
+    cursor: pointer;
+    background-color: black;
+  }
+  .homeBtn button a:hover{
+    color: #BEB9FF;
+  }
 strong, p {
     margin: 0;
 }
@@ -26,7 +55,7 @@ strong.section_header {
 /* form wrapper styling */
 .form_wrapper {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 60%;
