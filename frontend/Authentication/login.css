@@ -1,16 +1,46 @@
-body{
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+body {
   margin: 0;
-  padding: 50px 100px;
   box-sizing: border-box;
-  background: #BEB9FF;
-  background: radial-gradient(circle, #7F7AB5 0%, #C1BDE8 100%);
+  background: #beb9ff;
+  background: radial-gradient(circle, #7f7ab5 0%, #c1bde8 100%);
   display: flex;
   flex-direction: column;
   gap: 50px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
-
-strong, p {
+.homeBtn button {
+  background-color: transparent;
+  padding: 0.3rem 0.5rem;
+  border-radius: 1rem;
+  font-family: "Space Mono", sans-serif;
+  border-style: none;
+  outline: none;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  transition: all 200ms ease-in-out;
+  border: 2px solid black;
+}
+.homeBtn button a {
+  font-weight: 1000;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: black;
+}
+.fas,
+.fa-home {
+  margin: 3px;
+}
+.homeBtn button:hover {
+  cursor: pointer;
+  background-color: black;
+}
+.homeBtn button a:hover {
+  color: #beb9ff;
+}
+strong,
+p {
   margin: 0;
 }
 
@@ -19,9 +49,8 @@ strong.section_header {
   text-align: center;
   font-size: 4rem;
   text-transform: capitalize;
-  font-family: 'Seymour One', sans-serif;
+  font-family: "Seymour One", sans-serif;
 }
-
 
 /* form wrapper styling */
 .form_wrapper {
@@ -35,7 +64,7 @@ strong.section_header {
   color: rgb(255, 255, 255);
   padding: 50px;
   border-radius: 2rem;
-  box-shadow: 1px 2px 20px rgba(0,0,0,0.2);
+  box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.2);
   gap: 50px;
   background: rgb(0, 0, 0);
 }
@@ -73,9 +102,8 @@ strong.section_header {
 }
 .class_wrapper strong {
   font-size: 5rem;
-  font-family: 'Seymour One', sans-serif;
+  font-family: "Seymour One", sans-serif;
 }
-
 
 .buttons_wrapper {
   display: flex;
@@ -86,7 +114,7 @@ strong.section_header {
 }
 .buttons_wrapper button {
   mix-blend-mode: difference;
-  background: #BEB9FF;
+  background: #beb9ff;
   display: inline;
   font-size: 1rem;
   border-radius: 1rem;

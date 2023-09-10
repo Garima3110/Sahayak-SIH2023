@@ -1,36 +1,73 @@
-html{
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-body{
-    margin: 0;
-    padding: 0;
-    background: radial-gradient(50% 50% at 50% 50%, #7F7AB5 0%, #C1BDE8 100%);
-    position: relative;
-    font-family: 'Inter', sans-serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(50% 50% at 50% 50%, #7f7ab5 0%, #c1bde8 100%);
+  position: relative;
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.homeBtn button {
+  background-color: transparent;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 1rem;
+  font-family: "Space Mono", sans-serif;
+  border-style: none;
+  outline: none;
+  /* margin-top: 1rem;
+    margin-left: 1rem; */
+  transition: all 200ms ease-in-out;
+  border: 2px solid black;
+}
+.homeBtn button a {
+  font-weight: 1000;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: black;
+}
+.fas,
+.fa-home {
+  margin: 3px;
+}
+.homeBtn button:hover {
+  cursor: pointer;
+  background-color: black;
+}
+.homeBtn button a:hover {
+  color: #beb9ff;
 }
 .start_now_button {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .start_now_button button {
-    background-color: black;
-    padding: 0.5rem 5rem;
-    font-size: 1.5rem;
-    font-weight: 300;
-    border-radius: 2rem;
-    color: white;
+  background-color: black;
+  padding: 0.5rem 5rem;
+  font-size: 1.5rem;
+  border-style: none;
+  outline: none;
+  font-weight: 300;
+  border-radius: 2rem;
+  color: white;
 }
-.start_now_button button .quiz-link{
- color: white;
+.start_now_button button .quiz-link {
+  color: white;
+  text-decoration: none;
 }
-.start_now_button button .quiz-link:hover{
- color: rgb(209, 198, 229);
+.start_now_button button .quiz-link:hover {
+  color: rgb(209, 198, 229);
 }
