@@ -34,14 +34,17 @@ app.get("/signup", (req,res)=>{
 
 app.use("/api/user", userRouter);
 
-app.get("/quizpage", (req,res)=>{
-    res.send("quizpage");
-})
+// app.get("/quizpage", (req,res)=>{
+//     res.send("quizpage");
+// })
 
 app.get("/results", (req,res)=>{
     res.send("results");
 })
 
+app.get("/quizpage", (req,res)=>{
+    res.sendFile(path.join(__dirname, '../frontend/quiz.html'));
+})
 
 
 
