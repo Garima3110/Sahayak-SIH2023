@@ -10,37 +10,40 @@ body{
     gap: 50px;
     font-family: 'Inter', sans-serif;
 }
+strong, p {
+    margin: 0;
+}
 
-.homeBtn button{
-    background-color:transparent;
-    padding: 0.3rem 0.5rem;
+.homeBtn button {
+    background-color: transparent;
+    padding: 0.3rem 1rem;
     border-radius: 1rem;
-    font-family: 'Space Mono', sans-serif;
-    border-style: none;
     outline: none;
     margin-top: 1rem;
     margin-left: 1rem;
     transition: all 200ms ease-in-out;
     border: 2px solid black;
-  }
-  .homeBtn button a{
-    font-weight: 1000;
+    cursor: pointer;
+}
+.homeBtn button a {
+    font-weight: 500;
     text-decoration: none;
     font-size: 1.1rem;
     color: black;
-  }
-  .fas, .fa-home{
-    margin: 3px;
-  }
-  .homeBtn button:hover{
-    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-transform: capitalize;
+}
+.homeBtn button i {
+    font-size: 1rem;
+}
+.homeBtn button:hover {
     background-color: black;
-  }
-  .homeBtn button a:hover{
-    color: #BEB9FF;
-  }
-strong, p {
-    margin: 0;
+}
+.homeBtn button:hover a {
+    color: white;
 }
 
 strong.section_header {
