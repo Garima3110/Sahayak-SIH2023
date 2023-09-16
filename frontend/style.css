@@ -359,6 +359,7 @@ strong.heading2 {
 
 .faq{
 background-color: #beb9ff;
+height: 100vh;
 }
 .title{
     font-family: 'Space Mono';
