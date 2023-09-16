@@ -45,6 +45,14 @@
     background: radial-gradient(50% 50% at 50% 50%, #7f7ab5 0%, #c1bde8 100%);
 
   }
+  .content{
+    margin-top:20vh;
+  }
+
+.learner-status{
+  margin-bottom:18vh;
+}
+
 
     .header {
     padding: 15px;
@@ -73,6 +81,7 @@
     .quiz-body {
     margin-top: 15px;
     padding-bottom: 50px;
+    position: relative;
     }
     .option-block-container {
     margin-top: 20px;

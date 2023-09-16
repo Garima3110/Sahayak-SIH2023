@@ -397,8 +397,23 @@ var quiz = {
   }
   }
   this.showResult = function (scr) {
+    $("#result").addClass('result');
+  
+    // Calculate learner status
+    var learnerStatus;
+    if (scr < 10) {
+      learnerStatus = 'Slow Learner';
+    } else if (scr < 18) {
+      learnerStatus = 'Average Learner';
+    } else {
+      learnerStatus = 'Fast Learner';
+    }
   $("#result").addClass('result');
-  $("#result").html("<h1 class='res-header'>Total Score: &nbsp;" + scr + '/' + totalque + "</h1>");
+  $("#result").html("<h1 class='res-header'>Total Score: &nbsp;" + scr + '/' + totalque + "</h1>"+
+  '<h2 class="learner-status"><b>Learner Status:</b> &nbsp;' + learnerStatus + '</h2>'
+  
+
+  );
   for (var j = 0; j < totalque; j++) {
   var res;
   if (quiz.JS[j].score == 0) {
@@ -413,7 +428,13 @@ var quiz = {
   '</div>'
   );
   }
-  }
+
+ 
+}
+  
+
+
+ 
   this.checkAnswer = function (option) {
   var answer = quiz.JS[this.currentque].answer;
   option = option.replace(/</g, "&lt;") //for <
@@ -444,20 +465,22 @@ var quiz = {
   });
   });
   $('#next').click(function (e) {
-  e.preventDefault();
-  if (selectedopt) {
-  jsq.checkAnswer(selectedopt);
-  }
-  jsq.changeQuestion(1);
+    e.preventDefault();
+    if (selectedopt) {
+      jsq.checkAnswer(selectedopt);
+    }
+    jsq.changeQuestion(1);
+  
+    // Check if the quiz is completed and display the result if it is
+    if (jsq.currentque >= totalque) {
+      jsq.showResult(jsq.score, totalque);
+    }
   });
+  
   $('#previous').click(function (e) {
-  e.preventDefault();
-  if (selectedopt) {
-  jsq.checkAnswer(selectedopt);
-  }
-  jsq.changeQuestion(-1);
+    e.preventDefault();
+    if (selectedopt) {
+      jsq.checkAnswer(selectedopt);
+    }
+    jsq.changeQuestion(-1);
   });
-  // if (jsq.currentque >= totalque) {
-  //   // Display the result button
-  //   $("#resultButton").removeClass(".resultButtonHidden");
-  // }
