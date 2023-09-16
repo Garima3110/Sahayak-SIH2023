@@ -358,7 +358,8 @@ strong.heading2 {
 }
 
 .faq{
-background:  linear-gradient(0deg, rgb(203, 198, 255) 0%, #7F7AB5 100%);
+/* background:  linear-gradient(0deg, rgb(203, 198, 255) 0%, #7F7AB5 100%); */
+background-color: rgb(203, 198, 255);
 min-height: 100vh;
 display: flex;
 flex-direction: column;
