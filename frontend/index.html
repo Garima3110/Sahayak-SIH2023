@@ -229,7 +229,7 @@
 
     <div class="questions-container">
         <div class="question">
-            <button>
+            <button class ="toggle-btn">
                 <span>What are your offerings?</span>
                 <i class="fas fa-chevron-down d-arrow"></i>
             </button>
@@ -237,7 +237,7 @@
         </div>
 
         <div class="question">
-            <button>
+            <button class ="toggle-btn">
                 <span>What are the different categories in which the students will be categorised?</span>
                 <i class="fas fa-chevron-down d-arrow"></i>
             </button>
@@ -245,7 +245,7 @@
         </div>
 
         <div class="question">
-            <button>
+            <button class ="toggle-btn">
                 <span>How will you categorie students?</span>
                 <i class="fas fa-chevron-down d-arrow"></i>
             </button>
@@ -253,7 +253,7 @@
         </div>
 
         <div class="question">
-            <button>
+            <button class ="toggle-btn">
                 <span>What type of resources do you provide</span>
                 <i class="fas fa-chevron-down d-arrow"></i>
             </button>
@@ -261,7 +261,7 @@
         </div>
 
         <div class="question">
-            <button>
+            <button class ="toggle-btn">
                 <span>It can be depressing and demotivating</span>
                 <i class="fas fa-chevron-down d-arrow"></i>
             </button>
@@ -269,7 +269,7 @@
         </div>
 
         <div class="question">
-            <button>
+            <button class ="toggle-btn">
                 <span>How is it different from other quiz portals</span>
                 <i class="fas fa-chevron-down d-arrow"></i>
             </button>
@@ -280,18 +280,37 @@
 </section>
 
 <script>
-    const buttons = document.querySelectorAll('button');
+  const buttons = document.querySelectorAll('.toggle-btn');
 
-    buttons.forEach( button =>{
-        button.addEventListener('click',()=>{
-            const faq = button.nextElementSibling;
-            const icon = button.children[1];
+  buttons.forEach((button, index) => {
+      button.addEventListener('click', () => {
+          const faq = button.nextElementSibling;
+          const icon = button.children[1];
 
-            faq.classList.toggle('show');
-            icon.classList.toggle('rotate');
-    })
-} )
+          // Check if the clicked FAQ is already open
+          const isOpen = faq.classList.contains('show');
+
+          // Close all FAQs except the clicked one
+          buttons.forEach((btn, i) => {
+              if (i !== index) {
+                  const otherFaq = btn.nextElementSibling;
+                  const otherIcon = btn.children[1];
+
+                  otherFaq.classList.remove('show');
+                  otherIcon.classList.remove('rotate');
+              }
+          });
+
+          // Toggle the clicked FAQ
+          if (!isOpen) {
+              faq.classList.toggle('show');
+              icon.classList.toggle('rotate');
+          }
+      });
+  });
 </script>
+
+
 
     <script src="./script.js"></script>
   </body>
