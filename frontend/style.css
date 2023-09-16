@@ -358,7 +358,6 @@ strong.heading2 {
 }
 
 .faq{
-/* background:  linear-gradient(0deg, rgb(203, 198, 255) 0%, #7F7AB5 100%); */
 background-color: rgb(203, 198, 255);
 min-height: 100vh;
 display: flex;
@@ -425,4 +424,13 @@ justify-content: center;
 }
 .question button .d-arrow.rotate{
     transform: rotate(180deg);
+}
+
+.footer {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #7F7AB5;
+    background-color: rgb(203, 198, 255);
+    padding: 10px;
 }
