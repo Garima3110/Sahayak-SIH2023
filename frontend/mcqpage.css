@@ -1,0 +1,122 @@
+/* .homeBtn button {
+    background-color: transparent;
+    padding: 0.3rem 1rem;
+    border-radius: 1rem;
+    outline: none;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    transition: all 200ms ease-in-out;
+    border: 2px solid black;
+    cursor: pointer;
+  }
+  .homeBtn button a {
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-transform: capitalize;
+  }
+  .homeBtn button i {
+    font-size: 1rem;
+  }
+  .homeBtn button:hover {
+    background-color: black;
+  }
+  .homeBtn button:hover a {
+    color: white;
+  } */
+  
+.content {
+    margin-top: 54px;
+    }
+    .header {
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    }
+    .left-title {
+    width: 80px;
+    color: #fff;
+    font-size: 18px;
+    float: left;
+    }
+    .right-title {
+    width: 150px;
+    text-align: right;
+    float: right;
+    color: #fff;
+    }
+    .quiz-body {
+    margin-top: 15px;
+    padding-bottom: 50px;
+    }
+    .option-block-container {
+    margin-top: 20px;
+    max-width: 420px;
+    }
+    .option-block {
+    padding: 10px;
+    background: aliceblue;
+    border: 1px solid #84c5fe;
+    margin-bottom: 10px;
+    cursor: pointer;
+    }
+    .result-question {
+    font-weight: bold;
+    }
+    .c-wrong {
+    margin-left: 20px;
+    color: #ff0000;
+    }
+    .c-correct {
+    margin-left: 20px;
+    color: green;
+    }
+    .last-row {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    }
+    .res-header {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    }
+    /* Used to hide the button till results do not get displayed */
+    .resultButtonHidden{
+      display: none;
+    }
+    /* styling the view category button */
+    #resultButton{
+      display: flex;
+      justify-content: center;
+      /* background-color: black; */
+      margin-bottom: 30px;
+    }
+    #resultButton button{
+      border: none;
+      outline: none;
+      background-color: #9c95dd;
+      border: 2px solid white;
+      padding: 10px 60px;
+      border-radius: 10px;
+    }
+    #resultButton button a{
+      color:black;
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+    #resultButton button {
+      cursor: pointer;
+    }
+    #resultButton button:hover{
+      color: rgb(26, 22, 22);
+      background-color: #948aee;
+    }
