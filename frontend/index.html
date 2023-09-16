@@ -222,6 +222,77 @@
       </div>
     </section>
 
+
+
+<section class="faq">
+    <h1 class="title">Frequently Asked Questions</h1>
+
+    <div class="questions-container">
+        <div class="question">
+            <button>
+                <span>What are your offerings?</span>
+                <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>We provide a personalised learning experience to each and every student according to their level and learning speed</p>
+        </div>
+
+        <div class="question">
+            <button>
+                <span>What are the different categories in which the students will be categorised</span>
+                <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>We will categorie students as slow learners, average leaners or fast learners</p>
+        </div>
+
+        <div class="question">
+            <button>
+                <span>How will you categorie students</span>
+                <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>We will take several assessment tests and evaluate them on the basis of average score secured. We will also provide you with all the resources.</p>
+        </div>
+
+        <div class="question">
+            <button>
+                <span>What type of resources do you provide</span>
+                <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>We provide the students, personalised resources which include videos, documents and detailed solutions of each assignment</p>
+        </div>
+
+        <div class="question">
+            <button>
+                <span>It can be depressing and demotivating</span>
+                <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>Our motive is to provide every student with a learning experience according to their own pace</p>
+        </div>
+
+        <div class="question">
+            <button>
+                <span>How is it different from other quiz portals</span>
+                <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>We provide level-wise assistance, guidance and support to students to improvise their learning.</p>
+        </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    const buttons = document.querySelectorAll('button');
+
+    buttons.forEach( button =>{
+        button.addEventListener('click',()=>{
+            const faq = button.nextElementSibling;
+            const icon = button.children[1];
+
+            faq.classList.toggle('show');
+            icon.classList.toggle('rotate');
+    })
+} )
+</script>
+
     <script src="./script.js"></script>
   </body>
 </html>
