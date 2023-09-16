@@ -358,11 +358,18 @@ strong.heading2 {
 }
 
 .faq{
-background-color: #beb9ff;
-height: 100vh;
+background:  linear-gradient(0deg, rgb(203, 198, 255) 0%, #7F7AB5 100%);
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 }
 .title{
-    font-family: 'Space Mono';
+    /* font-family: 'Space Mono'; */
+    font-size: 4rem;
+    text-transform: capitalize;
+    font-family: 'Seymour One', sans-serif;
     font-size: 50px;
     text-align: center;
     margin-top: 0px;
@@ -381,7 +388,8 @@ height: 100vh;
 }
 .question button{
     width: 100%;
-    background-color: #000;
+    font-family: 'Space Mono';
+    background-color:#7F7AB5;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -389,13 +397,14 @@ height: 100vh;
     border:none;
     outline: none;
     font-size: 22px;
-    color: #fff;
+    color: black;
     font-weight: 700;
     cursor: pointer;
     text-align: left;
 }
 .question p{
     font-size: 22px;
+    font-family: 'Space Mono';
     max-height: 0;
     opacity: 0;
     line-height: 1.5;
