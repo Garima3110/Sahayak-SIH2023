@@ -29,28 +29,46 @@
   .homeBtn button:hover a {
     color: white;
   } */
+  html{
+    box-sizing: border-box;
+  }
   
-.content {
-    margin-top: 54px;
-    }
+  body{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: radial-gradient(50% 50% at 50% 50%, #7f7ab5 0%, #c1bde8 100%);
+
+  }
+
     .header {
     padding: 15px;
+    font-family: 'Seymour One', sans-serif;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 9999;
+    color: black;
+    background:  #7f7ab5 !important;
+
+    z-index: 1;
     }
     .left-title {
-    width: 80px;
-    color: #fff;
-    font-size: 18px;
+    /* width: 80px; */
+    /* color: #fff; */
+    font-size: 28px;
     float: left;
     }
     .right-title {
-    width: 150px;
+    /* width: 150px; */
     text-align: right;
+    font-size: 18px;
     float: right;
-    color: #fff;
+    /* color: #fff; */
     }
     .quiz-body {
     margin-top: 15px;
@@ -62,10 +80,12 @@
     }
     .option-block {
     padding: 10px;
+    width: 100%;
     background: aliceblue;
-    border: 1px solid #84c5fe;
+    border: 1px solid #c1bde8;
     margin-bottom: 10px;
     cursor: pointer;
+    
     }
     .result-question {
     font-weight: bold;
@@ -83,10 +103,21 @@
     padding-bottom: 25px;
     margin-bottom: 25px;
     }
+
+    .form-group {
+      margin-bottom: 1rem;
+      margin-top: 100px;
+    }
+
     .res-header {
     border-bottom: 1px solid #ccc;
     margin-bottom: 15px;
     padding-bottom: 15px;
+    }
+    /* styling previous next buttons */
+    .buttons{
+      color: white;
+      background-color: black;
     }
     /* Used to hide the button till results do not get displayed */
     .resultButtonHidden{
@@ -118,5 +149,5 @@
     }
     #resultButton button:hover{
       color: rgb(26, 22, 22);
-      background-color: #948aee;
+      background-color:transparent;
     }
